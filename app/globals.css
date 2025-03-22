@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap');
+@import "tailwindcss";
+* {
+    font-family: Outfit;
+}
+
+.font-ovo {
+    font-family: "Ovo", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-outfit {
+    font-family: "Outfit", serif;
+    font-style: normal;
+}
+
+p {
+    @apply flex items-center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.temp-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255.41px, 1fr));
+    gap: 25px;
+}
+
+.temp {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.temp-195 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    gap: 25px;
+}
+
+.temp-350 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.temp-65 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+    gap: 15px;
+}
+
+.input {
+    @apply min-w-[350px] px-[15px] rounded-[8px] bg-white outline-none border border-[#A4A4A4] text-[#565656] text-[18px];
+}
+
+.input:focus {
+    @apply border border-gray-500;
+}
+
+.textarea {
+    @apply rounded-[8px] bg-white p-[15px] outline-none border border-[#A4A4A4] text-[#565656] text-[18px] resize-none;
+}
+
+.textarea:focus {
+    @apply border border-gray-500;
+}
+
+.show-side-bar {
+    @apply h-[100vh] w-[250px] fixed top-0 z-50 bg-white flex flex-col shadow-md border-l border-slate-200;
+    animation: show_side_bar_animation 0.3s ease-in-out forwards;
+}
+
+.hide-side-bar {
+    @apply h-[100vh] w-[250px] fixed top-0 z-50 bg-white flex flex-col shadow-md border-l border-slate-200;
+    animation: hide_side_bar_animation 0.3s ease-in-out forwards;
+}
+
+@keyframes show_side_bar_animation {
+    0% {
+        right: -260px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes hide_side_bar_animation {
+    0% {
+        right: 0;
+    }
+    90% {
+        right: -260px;
+    }
+    100% {
+        display: none;
+    }
+}
+
+
+/* ---------------------------------- */
+
+.navbar {
+    @apply fixed w-full z-50 flex items-center justify-between duration-300;
+    padding: 1rem 2rem;
+}
+
+.navbar.default {
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.3);
+    /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    /* Blurred effect */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Span for navigation links */
+
+.nav-links {
+    @apply hidden md:flex gap-8 rounded-full px-12 py-3 items-center justify-center h-[70%] duration-300;
+    /* display: flex;
+    gap: 1.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
+    transition: all 0.3s ease-in-out; */
+}
+
+.nav-links.default {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.scrolled {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
