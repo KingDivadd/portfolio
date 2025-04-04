@@ -2,6 +2,7 @@ import { service_data } from '@/constant'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import {motion} from 'motion/react'
 
 const MyServices = () => {
     return (
@@ -10,15 +11,15 @@ const MyServices = () => {
 
             <p className="text-4xl md:text-5xl  mt-[12px] text-[#242424] h-[68px]  font-ovo ">My Services</p>
 
-            <p className="text-[18px] mt-[25px] w-full sm:w-[764px] text-center text-[#565656]">I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
+            <p className="text-[18px] mt-[25px] w-full sm:w-[764px] text-center text-[#565656]">I provide Full-Stack Development services, building scalable web applications with intuitive UIs, robust backends, and seamless integrations using modern technologies</p>
 
 
             <section className="mt-[54px] w-full  temp-1 ">
                 {
                     service_data.map((data, ind)=>{
                         return(
-                            <div key={ind} className="min-w-[255.41px] min-h-[250px] rounded-[8px] border border-[#D8D8D8] flex flex-col px-[25px] py-[35px] ">
-                                <span className={`relative overflow-hidden h-[48px] w-[48px] `}>
+                            <div key={ind} className="min-w-[255.41px] min-h-[260px] rounded-[8px] border border-[#D8D8D8] flex flex-col px-[25px] py-[35px] ">
+                                <span className={`relative overflow-hidden h-[50px] w-[50px] `}>
                                     <Image src={data.icon} alt='' layout='fill' objectFit='contain' />
                                 </span>
                                 

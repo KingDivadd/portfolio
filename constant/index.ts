@@ -17,10 +17,10 @@ export const work_data = [
 
 // this is a list of the services offered.
 export const service_data = [
-    { icon: '/icons/web-icon.png', title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: '/icons/mobile-icon.png', title: 'Mobile App', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: '/icons/ui-icon.png', title: 'UI/UX design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: '/icons/graphics-icon.png', title: 'Graphic design', description: 'Web development is the process of building, programming...', link: '' },
+    { icon: '/icons/globe-icon.png', title: 'Web Application Development', description: 'Dynamic, responsive, and high-performance web applications using modern frameworks like Next.js, React, and Node.js', link: '' },
+    { icon: '/icons/api-icon.png', title: 'API Development & Integration', description: 'Design and implement secure, scalable REST and GraphQL APIs, seamlessly integrating third-party services for enhanced functionality.', link: '' },
+    { icon: '/icons/database-icon.png', title: 'Database Design & Management', description: 'Efficient, well-structured databases using PostgreSQL, MongoDB, ensuring optimal data storage and retrieval.', link: '' },
+    { icon: '/icons/lightning-icon.png', title: 'Performance Optimization & Security', description: 'Enhanced website speed, security, and scalability by implementing best practices like caching, authentication, and secure coding techniques.', link: '' },
 ]
 
 // this is a list of personal information
@@ -35,6 +35,7 @@ export const tools_data = [
     {icon: '/icons/vscode.png'},
     {icon: '/icons/firebase.png'},
     {icon: '/icons/mongodb.png'},
+    {icon: '/icons/psql-icon.png'},
     {icon: '/icons/figma.png'},
     {icon: '/icons/git.png'},
 ]

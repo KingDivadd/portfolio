@@ -33,7 +33,6 @@ const Navbar = () => {
 
             <div className="fixed mx-auto overflow-hidden top-0 right-0 h-[100vh] w-[90%] -z-10 translate-y-[-80%] ">
                 <Image src={'/header-bg-color.png'} alt='header bg color' fill={true} objectFit='contain'  className='w-full' />
-                
             </div>
             <nav className={`navbar ${is_scroll ? 'scrolled' : 'default'}`}>
                 <Link href={'#top'} className="xl:w-[250px] flex justify-start items-end ">
@@ -56,9 +55,9 @@ const Navbar = () => {
                 </span>
 
                 <span className=" xl:w-[250px] sm:flex items-center justify-end gap-5 sm:gap-3 ">
-                    <span className="relative overflow-hidden h-[20px] w-[20px] md:h-[22px] md:w-[24px]  hover:cursor-pointer">
+                    {/* <span className="relative overflow-hidden h-[20px] w-[20px] md:h-[22px] md:w-[24px]  hover:cursor-pointer">
                         <Image src={'/icons/moon.png'} alt='moon' layout='fill' objectFit='contain' />
-                    </span>
+                    </span> */}
 
                     <Link href={'#contact'} className="hidden lg:flex items-center gap-[19px] px-10 py-2 border border-gray-500 rounded-full ml-4 font-ovo">Contact 
                         <span className="h-[11px] w-[11px] relative overflow-hidden">

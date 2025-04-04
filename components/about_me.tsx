@@ -2,11 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import { info_list, tools_data } from '@/constant'
 import Link from 'next/link'
+import { motion } from "motion/react"
 
 const AboutMe = () => {
     return (
         <section id='about' className="w-full px-5 lg:px-8 xl:px-[8%] py-10 scroll-mt-20  flex flex-col items-center ">
-            <p className="text-lg text-[#242424] font-ovo h-[27px] ">Introduction</p>
+            
+            <p className="text-lg text-[#242424] font-ovo h-[27px] ">Introductionn</p>
 
             <p className="text-4xl md:text-5xl mt-[12px] text-[#242424] h-[68px]  font-ovo ">About me</p>
 
@@ -16,7 +18,7 @@ const AboutMe = () => {
                 </div>
 
                 <div className="flex-1 max-lg: ">
-                    <p className="text-[18px] text-[#565656] max-w-2xl max-lg:align-middle max-lg:text-center ">I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+                    <p className="text-[18px] text-[#565656] max-w-2xl max-lg:align-middle max-lg:text-center ">I am an experienced Full-stack Developer with over a 4years of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
 
                     <div className="w-full  mt-[25px] gap-[30px] temp-195">
                         {

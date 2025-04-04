@@ -7,6 +7,8 @@ import {footer_data} from '@/constant'
 const Footer = () => {
     return (
         <footer className="w-full px-5 lg:px-8 xl:px-[8%] py-10 scroll-mt-20  flex flex-col items-center ">
+            
+
             <span className="w-[] h-[57px] flex items-end ">
                 <p className="text-2xl md:text-3xl font-outfit font-[500] ">David</p>
                 <span className="relative overflow-hidden h-[10px] w-[10px] mb-[5px]">
