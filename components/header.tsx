@@ -64,7 +64,7 @@ const Header = () => {
                     whileInView={{y: 0, opacity: 1}}
                     transition={{duration: 0.4, delay: 0.6 }}
                 
-                    href={'/Iroegbu_David_Resume.pdf.pdf'} download={'Iroegbu_David_Resume.pdf'} className="w-[204px] h-[54px] sm:h-[64px] border border-[#A7A7A7] flex items-center justify-center gap-[10px] text-[#242424] text-[18px] rounded-full ">
+                    href={'/irogbu_david_resume.pdf'} download={'irogbu_david_resume.pdf'} className="w-[204px] h-[54px] sm:h-[64px] border border-[#A7A7A7] flex items-center justify-center gap-[10px] text-[#242424] text-[18px] rounded-full ">
                     my resume
                     <span className="h-full flex items-center justify-center pt-[0.5px]">
                         <span className={`relative overflow-hidden h-[20px] w-[20px] `}>
@@ -72,6 +72,7 @@ const Header = () => {
                         </span>
                     </span>
                 </motion.a>
+
             </span>
 
 
