@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { info_list, tools_data } from '@/constant'
-import Link from 'next/link'
-import { motion } from "motion/react"
 
 const AboutMe = () => {
     return (

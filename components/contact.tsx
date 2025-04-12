@@ -1,9 +1,7 @@
 'use client'
-import React, {useState, useEffect} from 'react'
-import Link from 'next/link'
+import React, {useState} from 'react'
 import Image from 'next/image'
 import {motion} from 'motion/react'
-import {  work_data } from '@/constant'
 
 const access_key = process.env.NEXT_PUBLIC_CONTACT_ACCESS_KEY
 
