@@ -20,7 +20,7 @@ const Header = () => {
                 whileInView={{y: 0, opacity: 1}}
                 transition={{duration: 0.4, delay: 0.15 }}
                 
-                className="flex items-center justify-center gap-[11px] mt-[20px]">
+                className="flex items-center justify-center gap-[11px] mt-[20px] ">
                 <p className="text-[#242424]  font-ovo text-xl md:text-2xl ">{"Hi! I'm David Iroegbu"}</p>
                 <span className={`relative overflow-hidden h-[40px] w-[28px] `}>
                     <Image src={'/icons/hand-icon.png'} alt='' layout='fill' objectFit='contain' />
@@ -32,7 +32,7 @@ const Header = () => {
                 whileInView={{y: 0, opacity: 1}}
                 transition={{duration: 0.4, delay: 0.15 }}
                 
-                className="text-[#242424] mt-[30px] sm:mt-[20px] max-w-3xl font-ovo text-3xl sm:text-6xl lg:text-[66px] align-middle text-center ">Full-stack web developer 
+                className="text-[#242424] mt-[30px] sm:mt-[20px] max-w-3xl font-ovo text-3xl sm:text-6xl lg:text-[66px] align-middle text-center  ">Full-stack web developer 
             based in Nigeria.</motion.p>
 
             <motion.p 

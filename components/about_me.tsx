@@ -15,7 +15,7 @@ const AboutMe = () => {
                     <Image src={'/user-image.png'} alt='' layout='fill' objectFit='contain' />
                 </div>
 
-                <div className="flex-1 max-lg: ">
+                <div className="flex-1  ">
                     <p className="text-[18px] text-[#565656] max-w-2xl max-lg:align-middle max-lg:text-center ">I am an experienced Full-stack Developer with over a 4years of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
 
                     <div className="w-full  mt-[25px] gap-[30px] temp-195">

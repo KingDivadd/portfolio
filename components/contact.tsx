@@ -19,27 +19,33 @@ const Contact = () => {
     const handle_submit = async (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setResult("Sending....");
-        const formData = new FormData(event.currentTarget);
-    
-        formData.append("access_key", access_key!);
-    
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
-    
-        const data = await response.json();
-    
-        if (data.success) {
-            setResult("Form Submitted Successfully");
-            setTimeout(() => {
-                setResult('')
-                setUser_input({name: '', email: '', message: ''})
-            }, 5000);
-            event.currentTarget.reset();
-        } else {
-            console.log("Error", data);
-            setResult(data.message);
+
+        try {
+            const formData = new FormData(event.currentTarget);
+            
+            formData.append("access_key", access_key!);
+            
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                setResult("Form Submitted Successfully");
+                setTimeout(() => {
+                    setResult('')
+                    setUser_input({name: '', email: '', message: ''})
+                }, 5000);
+                event.currentTarget.reset();
+            } else {
+                console.log("Error", data);
+                setResult(data.message);
+            }
+        } catch (error) {
+            console.log('error => ',error)
+            setResult('')
         }
     };
 
