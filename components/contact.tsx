@@ -10,16 +10,16 @@ const Contact = () => {
     const [result, setResult] = React.useState('')
     
 
-    function handle_change(e:any) {
+    function handle_change(e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
         const name = e.target.name
         const value = e.target.value
         setUser_input({...user_input, [name]:value})
     }
     
-    const handle_submit = async (event:any) => {
+    const handle_submit = async (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setResult("Sending....");
-        const formData = new FormData(event.target);
+        const formData = new FormData(event.currentTarget);
     
         formData.append("access_key", access_key!);
     
@@ -36,7 +36,7 @@ const Contact = () => {
                 setResult('')
                 setUser_input({name: '', email: '', message: ''})
             }, 5000);
-            event.target.reset();
+            event.currentTarget.reset();
         } else {
             console.log("Error", data);
             setResult(data.message);

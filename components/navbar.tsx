@@ -1,5 +1,5 @@
 'use client'
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {navbar_data} from '@/constant/index'
@@ -45,8 +45,8 @@ const Navbar = () => {
                 <span className={`nav-links max-md:hidden ${is_scroll ? 'scrolled' : 'default'}`}>
 
                     {
-                        navbar_data.map((data:any, ind:number)=>{
-                            const {title, icon, id} = data
+                        navbar_data.map((data:{title:string, id:string}, ind:number)=>{
+                            const {title, id} = data
                             return(
                                 <Link key={ind} href={id} className="text-[#2F2F2F] text-[15px] font-ovo">{title}</Link>
                             )

@@ -14,7 +14,7 @@ const MobileSidebar = ({setShow_side_nav}:{setShow_side_nav: React.Dispatch<Reac
             <main className="w-full flex flex-col gap-3">
                 {
                     navbar_data.map((data:{title:string, icon: string, id: string}, ind:number)=>{
-                        const {title, icon, id} = data
+                        const {title, id} = data
                         return(
                             <Link key={ind} href={id} className="text-[#2F2F2F] text-[18px]" onClick={()=> setShow_side_nav(false)}>{title}</Link>
                         )

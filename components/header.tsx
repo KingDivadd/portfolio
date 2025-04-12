@@ -21,7 +21,7 @@ const Header = () => {
                 transition={{duration: 0.4, delay: 0.15 }}
                 
                 className="flex items-center justify-center gap-[11px] mt-[20px]">
-                <p className="text-[#242424]  font-ovo text-xl md:text-2xl ">Hi! I'm David Iroegbu</p>
+                <p className="text-[#242424]  font-ovo text-xl md:text-2xl ">{"Hi! I'm David Iroegbu"}</p>
                 <span className={`relative overflow-hidden h-[40px] w-[28px] `}>
                     <Image src={'/icons/hand-icon.png'} alt='' layout='fill' objectFit='contain' />
                 </span>
@@ -32,7 +32,7 @@ const Header = () => {
                 whileInView={{y: 0, opacity: 1}}
                 transition={{duration: 0.4, delay: 0.15 }}
                 
-                className="text-[#242424] mt-[30px] sm:mt-[20px] max-w-3xl font-ovo text-3xl sm:text-6xl lg:text-[66px] align-middle text-center ">full-stack web developer 
+                className="text-[#242424] mt-[30px] sm:mt-[20px] max-w-3xl font-ovo text-3xl sm:text-6xl lg:text-[66px] align-middle text-center ">Full-stack web developer 
             based in Nigeria.</motion.p>
 
             <motion.p 
@@ -63,7 +63,7 @@ const Header = () => {
                     transition={{duration: 0.4, delay: 0.6 }}
                 
                     href={'/irogbu_david_resume.pdf'} download={'irogbu_david_resume.pdf'} className="w-[204px] h-[54px] sm:h-[64px] border border-[#A7A7A7] flex items-center justify-center gap-[10px] text-[#242424] text-[18px] rounded-full ">
-                    my resume
+                    My Resume
                     <span className="h-full flex items-center justify-center pt-[0.5px]">
                         <span className={`relative overflow-hidden h-[20px] w-[20px] `}>
                             <Image src={'/icons/download-icon.png'} alt='' layout='fill' objectFit='contain' />
