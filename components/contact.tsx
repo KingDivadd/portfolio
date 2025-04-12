@@ -68,7 +68,7 @@ const Contact = () => {
 
                 className="text-4xl md:text-5xl mt-[12px] text-[#242424] h-[68px]  font-ovo ">Get in touch</motion.p>
 
-            <p className="text-[18px] mt-[25px] max-w-2xl text-center text-[#565656]">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+            <p className="text-[18px] mt-[25px] max-w-2xl text-center text-[#565656]">{"I'd love to hear from you! If you have any questions, comments or feedback, please use the form below."}</p>
 
             <motion.form 
                 initial={{opacity: 0}}
