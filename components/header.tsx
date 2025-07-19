@@ -11,8 +11,9 @@ const Header = () => {
                 initial={{scale:0}}
                 whileInView={{scale:1}}
                 transition={{duration: 0.6, type: 'spring', stiffness:'100'}}
-                className={`relative overflow-hidden h-[158px] w-[158px] mt-5 sm:mt-20`}>
-                <Image src={'/profile-img.png'} alt='' layout='fill' objectFit='contain' />
+                className={`relative overflow-hidden h-[158px] w-[158px] mt-5 sm:mt-20 rounded-full `}>
+                
+                <Image src={'/profile-img-2a.jpg'} alt='' layout='fill' objectFit='cover' />
             </motion.span>
 
             <motion.span 
