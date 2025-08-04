@@ -12,12 +12,13 @@ export default function Home() {
   return (
     <div className="w-screen h-screen ">
       <Navbar />
+      
       <Header />
       <AboutMe />
       <MyServices />
       <MyWork />
       <Contact />
-      <Footer />
+      <Footer /> 
     </div>
   );
 }

@@ -10,8 +10,8 @@ const AboutMe = () => {
 
             <p className="text-4xl md:text-5xl mt-[12px] text-[#242424] h-[68px]  font-ovo ">About me</p>
 
-            <article className="mt-[40px] mb-[30px] w-full px-5 flex lg:flex-row lg:justify-between items-center flex-col justify-start gap-10 lg:gap-20">
-                <div className={`relative overflow-hidden h-[520px] w-[350px] rounded-2xl`}>
+            <article className="mt-[40px] mb-[30px] w-full flex lg:flex-row lg:justify-between items-center flex-col justify-start gap-10 lg:gap-20  ">
+                <div className={`relative overflow-hidden h-[520px] w-full sm:w-[350px] rounded-2xl `}>
                     <Image src={'/profile-img-3a.jpg'} alt='' layout='fill' objectFit='cover' />
                 </div>
 

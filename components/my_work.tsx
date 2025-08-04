@@ -46,10 +46,10 @@ const MyWork = () => {
                     //   pagination={{ clickable: true }}
                     navigation={false}
                     loop={true}
-                    // autoplay={{
-                    //     delay: 10000, // Set to 10 seconds (10000 milliseconds)
-                    //     disableOnInteraction: false, // Continue autoplay after user interaction
-                    // }}
+                    autoplay={{
+                        delay: 10000, // Set to 10 seconds (10000 milliseconds)
+                        disableOnInteraction: false, // Continue autoplay after user interaction
+                    }}
                     modules={[Pagination, Navigation, Autoplay]} // Include Autoplay module
                     className="w-full h-full" >
 

@@ -2,6 +2,8 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
 import {motion} from 'motion/react'
+import { toast_msg } from '@/libs/toast'
+import {Button} from "@/components/ui/button"
 
 const access_key = process.env.NEXT_PUBLIC_CONTACT_ACCESS_KEY
 
@@ -18,6 +20,7 @@ const Contact = () => {
     
     const handle_submit = async (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+
         setResult("Sending....");
 
         try {
@@ -33,12 +36,14 @@ const Contact = () => {
             const data = await response.json();
             
             if (data.success) {
+                toast_msg({title: 'Email sent successfully.'})
+
                 setResult("Form Submitted Successfully");
                 setTimeout(() => {
-                    setResult('')
                     setUser_input({name: '', email: '', message: ''})
-                }, 5000);
-                event.currentTarget.reset();
+                    setResult('')
+                }, 2000);
+                // event.currentTarget.reset();
             } else {
                 console.log("Error", data);
                 setResult(data.message);
@@ -79,7 +84,7 @@ const Contact = () => {
             <motion.form 
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
-                transition={{delay: .45, duration: 0.3}}
+                transition={{delay: .15, duration: 0.3}}
 
                 onSubmit={handle_submit} className="w-full mt-[57px] flex flex-col items-center">
 
@@ -87,14 +92,14 @@ const Contact = () => {
                     <motion.input 
                         initial={{x:-50,  opacity: 0}}
                         whileInView={{x: 0, opacity: 1}}
-                        transition={{delay: .55, duration: 0.4}}
+                        transition={{delay: .25, duration: 0.3}}
 
                         type="text" placeholder='Enter your name' name='name' value={user_input.name} onChange={handle_change} className="input h-[54px] md:h-[64px]" />
 
                     <motion.input 
                         initial={{x:50,  opacity: 0}}
                         whileInView={{x: 0, opacity: 1}}
-                        transition={{delay: .55, duration: 0.4}}
+                        transition={{delay: .25, duration: 0.3}}
 
                         type="text" placeholder='Enter your email' name='email' value={user_input.email} onChange={handle_change} className="input h-[54px] md:h-[64px]" />
                 </div>
@@ -102,23 +107,24 @@ const Contact = () => {
                 <motion.textarea 
                     initial={{y:100,  opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
-                    transition={{delay: .65, duration: 0.4}}
+                    transition={{delay: .25, duration: 0.3}}
 
                     name="message" id="message" value={user_input.message} placeholder='Enter your message' onChange={handle_change} className="mt-[45px] w-full md:max-w-[727px] textarea h-[150px] sm:h-[215px]"></motion.textarea>
 
-                <motion.button 
+                <motion.Button 
                     initial={{y:50,  opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
-                    transition={{delay: .65, duration: 0.4}}
-
-                className=' mt-[74px] w-[204px] h-[54px] sm:h-[64px] bg-[#202020] rounded-full flex items-center justify-center text-[#ffffff] text-[16px] gap-2' type='submit' >
-                Submit now
-                <span className="h-full flex items-center justify-center pt-[1.5px]">
-                    <span className={`relative overflow-hidden h-[10.72px] w-[16.36px] `}>
-                        <Image src={'/icons/right-arrow-white.png'} alt='' layout='fill' objectFit='contain' />
+                    transition={{delay: .25, duration: 0.3}}
+                
+                    disabled={user_input.email == '' || user_input.message == '' || user_input.name == ''}
+                    className=' mt-[74px] w-[204px] h-[54px] sm:h-[64px] bg-[#202020] hover:bg-[#202020]/90 duration-200 rounded-full flex items-center justify-center text-[#ffffff] text-[16px] gap-2' type='submit' >
+                    Submit now
+                    <span className="h-full flex items-center justify-center pt-[1.5px]">
+                        <span className={`relative overflow-hidden h-[10.72px] w-[16.36px] `}>
+                            <Image src={'/icons/right-arrow-white.png'} alt='' layout='fill' objectFit='contain' />
+                        </span>
                     </span>
-                </span>
-                </motion.button>
+                </motion.Button>
             </motion.form>
 
             <p className="text-[18px] mt-[35px] text-[#565656] w-full text-center flex justify-center ">{result}</p>
