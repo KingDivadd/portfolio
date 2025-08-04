@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} ${ovo.className} w-[100vw] h-screen antialiased leading-8  `}>
+      <body className={`${outfit.className} ${ovo.className} w-[100vw] h-screen antialiased leading-8 overflow-x-hidden `}>
         <Toaster position="top-center"/>
         {children}
       </body>

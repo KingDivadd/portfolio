@@ -3,7 +3,6 @@ import React, {useState} from 'react'
 import Image from 'next/image'
 import {motion} from 'motion/react'
 import { toast_msg } from '@/libs/toast'
-import {Button} from "@/components/ui/button"
 
 const access_key = process.env.NEXT_PUBLIC_CONTACT_ACCESS_KEY
 
@@ -90,15 +89,15 @@ const Contact = () => {
 
                 <div className="w-full md:max-w-[727px] temp-350  ">
                     <motion.input 
-                        initial={{x:-50,  opacity: 0}}
-                        whileInView={{x: 0, opacity: 1}}
+                        initial={{y:-10,  opacity: 0}}
+                        whileInView={{y: 0, opacity: 1}}
                         transition={{delay: .25, duration: 0.3}}
 
                         type="text" placeholder='Enter your name' name='name' value={user_input.name} onChange={handle_change} className="input h-[54px] md:h-[64px]" />
 
                     <motion.input 
-                        initial={{x:50,  opacity: 0}}
-                        whileInView={{x: 0, opacity: 1}}
+                        initial={{y:10,  opacity: 0}}
+                        whileInView={{y: 0, opacity: 1}}
                         transition={{delay: .25, duration: 0.3}}
 
                         type="text" placeholder='Enter your email' name='email' value={user_input.email} onChange={handle_change} className="input h-[54px] md:h-[64px]" />
@@ -111,7 +110,7 @@ const Contact = () => {
 
                     name="message" id="message" value={user_input.message} placeholder='Enter your message' onChange={handle_change} className="mt-[45px] w-full md:max-w-[727px] textarea h-[150px] sm:h-[215px]"></motion.textarea>
 
-                <motion.Button 
+                <motion.button 
                     initial={{y:50,  opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
                     transition={{delay: .25, duration: 0.3}}
@@ -124,7 +123,7 @@ const Contact = () => {
                             <Image src={'/icons/right-arrow-white.png'} alt='' layout='fill' objectFit='contain' />
                         </span>
                     </span>
-                </motion.Button>
+                </motion.button>
             </motion.form>
 
             <p className="text-[18px] mt-[35px] text-[#565656] w-full text-center flex justify-center ">{result}</p>

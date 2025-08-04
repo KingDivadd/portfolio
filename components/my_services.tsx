@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const MyServices = () => {
     return (
-        <main id='services' className="w-full px-5 lg:px-8 xl:px-[8%] py-10 scroll-mt-20  flex flex-col items-center ">
+        <main id='services' className="w-[100vw] overflow-x-hidden px-5 lg:px-8 xl:px-[8%] py-10 scroll-mt-20  flex flex-col items-center ">
             <p  className="text-lg text-[#242424] font-ovo h-[27px] ">What i offer</p>
 
             <p className="text-4xl md:text-5xl  mt-[12px] text-[#242424] h-[68px]  font-ovo ">My Services</p>

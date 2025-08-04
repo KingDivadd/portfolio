@@ -19,7 +19,7 @@ const MyWork = () => {
             // whileInView={{opacity: 1}}
             // transition={{duration: 1}}
 
-        id='work' className="w-full px-5 lg:px-8 xl:px-[8%] py-10 scroll-mt-20  flex flex-col items-center ">
+        id='work' className="w-[100vw] overflow-x-hidden px-5 lg:px-8 xl:px-[8%] py-10 scroll-mt-20  flex flex-col items-center ">
             <p  className="text-lg text-[#242424] font-ovo h-[27px] ">My portfolio</p>
 
             <p className="text-4xl md:text-5xl mt-[12px] text-[#242424] h-[68px]  font-ovo ">My Latest Work</p>
@@ -86,14 +86,14 @@ const MyWork = () => {
                                         </DialogTrigger>
                                         <DialogContent className='w-full sm:w-[90vw] md:w-[80vw] lg:w-[65vw] xl:w-[55vw] 2xl:w-[57.5vw] '>
                                             <DialogHeader>
-                                                <DialogTitle className='font-mont'>EPulse Telemedicine</DialogTitle>
+                                                <DialogTitle className='font-mont'>ePulse Telemedicine</DialogTitle>
                                                 <DialogDescription>
                                                     {description}
                                                 </DialogDescription>
                                             </DialogHeader>
 
                                             <div className="w-full flex flex-col gap-5 h-[30vh] sm:h-[43vh] md:h-[45.5vh] lg:h-[50vh] xl:h-[52vh] 2xl:h-[65vh] ">
-                                                <span className=" h-full  overflow-hidden relative bg-gray-200">
+                                                <span className=" h-full  overflow-hidden relative bg-gray-200 rounded-md">
                                                     <Image src={bg_img} alt='' fill objectFit='contain' className='' />
                                                 </span>
 

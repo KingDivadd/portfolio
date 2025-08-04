@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 const Header = () => {
     return (
-        <header className="w-full px-5 h-screen flex flex-col items-center justify-center ">
+        <header className="w-[100vw] overflow-x-hidden px-5 h-screen flex flex-col items-center justify-center ">
             <motion.span 
                 initial={{scale:0}}
                 whileInView={{scale:1}}

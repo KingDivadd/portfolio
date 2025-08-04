@@ -4,7 +4,7 @@ import { info_list, tools_data } from '@/constant'
 
 const AboutMe = () => {
     return (
-        <section id='about' className="w-full px-5 lg:px-8 xl:px-[8%] py-10 scroll-mt-20  flex flex-col items-center ">
+        <section id='about' className="w-[100vw] overflow-x-hidden px-5 lg:px-8 xl:px-[8%] py-10 scroll-mt-20  flex flex-col items-center ">
             
             <p className="text-lg text-[#242424] font-ovo h-[27px] ">Introductionn</p>
 

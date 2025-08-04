@@ -6,8 +6,12 @@ import {navbar_data} from '@/constant/index'
 import MobileSidebar from '@/components/mobile_sidebar'
 import { FaAngleRight } from "react-icons/fa6";
 
+interface NavProps {
+    show_mobile_nav: boolean;
+    setShow_mobile_nav: (show_mobile_nav: boolean) => void;
+}
 
-const Navbar = () => {
+const Navbar = ({show_mobile_nav, setShow_mobile_nav}: NavProps ) => {
     const [is_scroll, setIs_scroll] = useState(false)
     const [show_side_nav, setShow_side_nav] = useState(false)
     
@@ -64,7 +68,7 @@ const Navbar = () => {
                         <FaAngleRight className={'size-[15px] text-gray-600 '} />
                     </Link>
 
-                    <button className="md:hidden relative overflow-hidden flex h-[20px] w-[20px] md:h-[22px] md:w-[24px] " onClick={()=> setShow_side_nav(!show_side_nav)}>
+                    <button className="md:hidden relative overflow-hidden flex h-[20px] w-[20px] md:h-[22px] md:w-[24px] " onClick={()=> setShow_mobile_nav(!show_mobile_nav)}  >
                         <Image src={!show_side_nav ? '/icons/menu-black.png' : '/icons/close-black.png'} alt='menu' objectFit='contain' layout='fill' />
                     </button>
                 </span>
