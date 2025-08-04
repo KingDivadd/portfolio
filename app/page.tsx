@@ -15,7 +15,7 @@ import Image from "next/image"
 export default function Home() {
   const [show_mobile_nav, setShow_mobile_nav] = useState(false)
 
-  function handleMenuHide(e: React.MouseEvent) {
+  function handleMenuHide() {
     if (show_mobile_nav) {
       setShow_mobile_nav(false)
     }
