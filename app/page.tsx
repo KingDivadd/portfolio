@@ -50,7 +50,7 @@ export default function Home() {
               <Link href={data.id} key={ind} className=" py-2 px-10 text-white text-sm  text-center " onClick={()=> {
                 setTimeout(() => {
                   setShow_mobile_nav(!show_mobile_nav)
-                }, 500);
+                }, 250);
               }}>{data.title}</Link>
             )
           })
