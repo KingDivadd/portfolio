@@ -38,7 +38,7 @@ export default function Home() {
 
       <span className={`md:hidden flex flex-col items-center justify-center gap-2 w-full min-h-[300px] bg-[#202020] ease-in-out duration-700 fixed rounded-b-lg left-0 ${show_mobile_nav ? "top-0":"top-[-500px]"} z-50`} onClick={handleMobileMenuClick}>
         <span className="w-full px-5 flex items-end justify-start">
-          <p className="text-md font-medium text-white ">David Iroegbu</p>
+          <p className="text-md font-medium text-white font-mont">David Iroegbu</p>
           <span className="relative overflow-hidden h-2 w-2 mb-2 ">
               <Image src={'/icons/red-dot.png'} alt='red-dot' layout='fill' objectFit='cotain' />
           </span>
@@ -47,10 +47,10 @@ export default function Home() {
         {
           navbar_data.map((data,ind)=>{
             return(
-              <Link href={data.id} key={ind} className=" py-2 px-10 text-white text-sm font-mont text-center" onClick={()=> {
+              <Link href={data.id} key={ind} className=" py-2 px-10 text-white text-sm  text-center " onClick={()=> {
                 setTimeout(() => {
                   setShow_mobile_nav(!show_mobile_nav)
-                }, 1000);
+                }, 500);
               }}>{data.title}</Link>
             )
           })
