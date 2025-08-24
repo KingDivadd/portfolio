@@ -9,10 +9,10 @@ export const navbar_data = [
 
 //  this is supposed to be a list of all the main projects
 export const work_data = [
-    { title: 'ePulse Telemedicine', description:'A telemedicine app built with Next.js, featuring a responsive Swiper carousel for services and testimonials. It enables virtual consultations and appointment booking, with seamless backend API integration, optimized for desktop and mobile devices.', project: 'full stack web app', bg_img: '/work-1.png', icon: '/icons/send-icon.png', route: 'https://epulse-telemedicine.vercel.app' },
-    { title: 'Geo Based App', description:'A telemedicine app built with Next.js, featuring a responsive Swiper carousel for services and testimonials. It enables virtual consultations and appointment booking, with seamless backend API integration, optimized for desktop and mobile.', project: 'mobile app', bg_img: '/work-2.png', icon: '/icons/send-icon.png', route:'https://david-iroegbu-portfolio.vercel.app/' },
-    { title: 'Photograhy Site', description:'A telemedicine app built with Next.js, featuring a responsive Swiper carousel for services and testimonials. It enables virtual consultations and appointment booking, with seamless backend API integration, optimized for desktop and mobile.', project: 'graphic design', bg_img: '/work-3.png', icon: '/icons/send-icon.png', route:'https://david-iroegbu-portfolio.vercel.app/' },
-    { title: 'UI/UX Designing', description:'A telemedicine app built with Next.js, featuring a responsive Swiper carousel for services and testimonials. It enables virtual consultations and appointment booking, with seamless backend API integration, optimized for desktop and mobile.', project: 'ui/ux design', bg_img: '/work-4.png', icon: '/icons/send-icon.png', route:'https://david-iroegbu-portfolio.vercel.app/' },
+    { title: 'ePulse Telemedicine', description:'A telemedicine app built with Next.js, enabling virtual consultations and appointment booking with seamless backend API integration. Optimized for both desktop and mobile devices', project: 'full stack web app', bg_img: '/epulse-6.png', icon: '/icons/send-icon.png', route: 'https://epulse-telemedicine.vercel.app' },
+    { title: 'Meetspace', description:'A Zoom-like web app built with Next.js, designed for virtual meetings and video conferencing with seamless backend API integration. Optimized for both desktop and mobile devices.', project: 'web app', bg_img: '/meetspace-2.png', icon: '/icons/send-icon.png', route:'/' },
+    { title: 'NextShop', description:'An e-commerce web app built with Next.js, featuring product listings, a shopping cart, and secure payment integration with seamless backend API support. Optimized for both desktop and mobile devices.', project: 'e-commerce web app', bg_img: '/nextshop-1.png', icon: '/icons/send-icon.png', route:'/' },
+
 ]
 
 // this is a list of the services offered.
